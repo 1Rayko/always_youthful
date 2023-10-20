@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendF"
+    android:background="@color/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:padding="10sp"
+            android:orientation="vertical" >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="8sp"
+                app:boxCornerRadiusBottomStart="8sp"
+                app:boxCornerRadiusTopEnd="8sp"
+                app:boxCornerRadiusTopStart="8sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/editTextTextMultiLine"
+                    android:layout_height="wrap_content"
+                    android:hint="Напишите вашу идею" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/sndbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnPress"
+                android:text="Отправить"
+                app:cornerRadius="8sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24sp"
+                android:alpha="0.2"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:fontFamily="@font/montserrat"
+                android:linksClickable="false"
+                android:text="v1.5 for android\nby sudoreboot in 2023\nwww.github.com/1Rayko\nvk.com/sudoreboot\nt.me/always_youthful"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
